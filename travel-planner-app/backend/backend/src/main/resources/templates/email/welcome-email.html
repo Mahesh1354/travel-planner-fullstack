@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Travel Planner</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto;">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; text-align: center; border-radius: 10px 10px 0 0;">
+    <h1 style="color: white; margin: 0;">Welcome to Travel Planner!</h1>
+</div>
+
+<div style="background-color: #f9f9f9; padding: 40px; border-radius: 0 0 10px 10px;">
+    <p style="font-size: 18px;">Hi <strong th:text="${name}">User</strong>,</p>
+
+    <p>Thank you for joining Travel Planner! We're excited to help you plan your next adventure.</p>
+
+    <p>With Travel Planner, you can:</p>
+    <ul style="margin-bottom: 30px;">
+        <li>Create and manage detailed trip itineraries</li>
+        <li>Search for flights, hotels, and activities</li>
+        <li>Track your travel budget</li>
+        <li>Get personalized recommendations</li>
+        <li>Share trips with friends and family</li>
+    </ul>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <a th:href="${dashboardUrl}" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Go to Dashboard</a>
+    </div>
+
+    <p style="margin-top: 30px;">Happy travels!<br>The Travel Planner Team</p>
+
+    <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">
+
+    <p style="font-size: 12px; color: #999; text-align: center;">
+        © 2025 Travel Planner. All rights reserved.<br>
+        <a th:href="${dashboardUrl}" style="color: #667eea; text-decoration: none;">Travel Planner</a>
+    </p>
+</div>
+</body>
+</html>
